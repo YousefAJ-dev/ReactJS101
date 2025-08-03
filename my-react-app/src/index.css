@@ -1,4 +1,19 @@
 /* ========== Global Styles & Variables ========== */
+html, body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Prevent scroll */
+}
+
+/*
+	Why move overflow: hidden to html, body instead of :root?
+
+	Because html and body are what actually control document overflow. 
+	:root is technically the same as html in selectors, but browsers
+	sometimes handle margin/padding differences better
+	when explicitly set on html, body.
+*/
+
 :root {
 	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 	/* Default font stack */
@@ -14,6 +29,29 @@
 	background-color: #242424;
 	/* Dark background color */
 
-	margin: 0px;
-	/* Removes default margin from root */
+
+	background-image: url('./assets/mountain-scenery.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+
+	display: flex;
+	min-height: 100dvh; /* dynamic viewport height */
+	justify-content: center;
+	align-items: center;
+}
+
+.clock-container {
+	padding: 5px;
+	width: 100dvw;
+	backdrop-filter: blur(5px);
+}
+
+.clock {
+	font-size: clamp(1rem, 15vw, 5rem);
+	text-align: center;
+	text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.822);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
