@@ -1,0 +1,26 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+
+}
+
+.login-success{
+	padding: 5px;
+	padding-left: 15px;
+	border: 1px solid rgb(22, 88, 14);
+	background-color: rgb(184, 255, 162);
+	color: rgb(0, 110, 24);
+}
+
+.login-error{
+	padding: 5px;
+	padding-left: 15px;
+	border: 1px solid rgb(207, 25, 25);
+	background-color: rgb(255, 125, 125);
+	color: rgb(185, 0, 0);
+}

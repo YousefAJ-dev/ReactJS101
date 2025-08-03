@@ -1,0 +1,61 @@
+/* ========== Global Root Variables and Defaults ========== */
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* Default font stack */
+	line-height: 1.5;                     /* Improves text readability */
+	font-weight: 400;                    /* Normal font weight */
+
+	color-scheme: light dark;           /* Supports dark/light theme systems */
+	color: rgba(255, 255, 255, 0.87);    /* Light text for dark backgrounds */
+	background-color: #242424;           /* Dark background color */
+
+	margin: 0px;                         /* Removes default margin from root */
+	box-sizing: border-box;             /* Makes padding/border sizing predictable */
+}
+
+/* ========== Main Container Block ========== */
+.container {
+	background-color: rgb(32, 44, 34);   /* Dark green background */
+	border: 2px solid;                  /* Generic border */
+	padding: 10px 20px;                /* Inner spacing */
+
+}
+
+.container,
+.list-category,
+.list-subcategory--title {
+	border-radius: 5px;
+	border: 1px solid; 
+}
+
+/* ========== Category Title ========== */
+.list-category {
+	background-color: #708875b6;         /* Semi-transparent green */
+	padding: 5px 10px;                   /* Inner spacing */
+	text-align: center;                  /* Center the text horizontally */
+}
+
+/* ========== Subcategory Row (Holds Two Side-by-Side Columns) ========== */
+.subcategory-row {
+	display: flex;                       /* Flex layout to align columns side by side */
+	justify-content: flex-start;        /* Align both subcategories to the left */
+}
+
+/* ========== Subcategory Block (Each Half Column) ========== */
+.list-subcategory {
+	margin-left: 3%;
+	margin-right: 3%;
+	flex: 1 1 50%;                       /* Each subcategory takes ~50% of the row */
+	/* Could add: align-items: flex-start if using inner flex */
+}
+
+/* ========== Subcategory Title ========== */
+.list-subcategory--title {
+	background-color: #686868;           /* Dark gray title background */
+	padding: 5px 10px;
+	text-align: center;                  /* Center the subcategory title text */
+}
+
+/* ========== Subcategory List Items ========== */
+.list-items {
+	margin-left: 5%;                   /* Indent the list under each subcategory */
+}

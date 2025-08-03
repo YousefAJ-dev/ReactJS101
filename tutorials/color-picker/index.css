@@ -1,0 +1,38 @@
+/* ========== Global Root Variables and Defaults ========== */
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; /* Default font stack */
+	line-height: 1.5;                     /* Improves text readability */
+	font-weight: 400;                    /* Normal font weight */
+
+	color-scheme: light dark;           /* Supports dark/light theme systems */
+	color: rgba(255, 255, 255, 0.87);    /* Light text for dark backgrounds */
+	background-color: #242424;           /* Dark background color */
+
+	margin: 0px;                         /* Removes default margin from root */
+	box-sizing: border-box;             /* Makes padding/border sizing predictable */
+}
+
+.color-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+}
+.box{
+	display: flex;
+	width: 350px;
+	height: 350px;
+	align-items: center;
+	justify-content: center;
+
+	border: 4px solid;
+	font-size: 3em;
+	text-align: center;
+	border-radius: 15px;
+}
+
+.color-box{
+	width: 75px;
+	height: 30px;
+	border-radius: 5px;
+}
