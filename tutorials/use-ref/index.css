@@ -1,0 +1,15 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* Default font stack */
+	line-height: 1.5;
+	/* Improves text readability */
+	font-weight: 400;
+	/* Normal font weight */
+
+	color-scheme: light dark;
+	/* Supports dark/light theme systems */
+	color: rgba(255, 255, 255, 0.87);
+	/* Light text for dark backgrounds */
+	background-color: #242424;
+	/* Dark background color */
+}
