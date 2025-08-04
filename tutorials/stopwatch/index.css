@@ -1,0 +1,71 @@
+:root {
+	font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+	/* Default font stack */
+	line-height: 1.5;
+	/* Improves text readability */
+	font-weight: 400;
+	/* Normal font weight */
+
+	color-scheme: light dark;
+	/* Supports dark/light theme systems */
+	color: rgba(255, 255, 255, 0.87);
+	/* Light text for dark backgrounds */
+	background-color: #242424;
+	/* Dark background color */
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stopwatch {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 5px solid;
+	border-radius: 50px;
+	padding: 30px;
+}
+
+.display {
+	font-size: 5rem;
+	font-weight: bold;
+}
+
+.controls button {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-shadow: 2px 2px 5px #000000;
+	padding: 10px 20px;
+	margin: 5px;
+	min-width: 125px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+}
+.controls button:active {
+	transform: scale(0.95);
+}
+
+.start-button {
+	background-color: rgb(65, 134, 65);
+}
+.start-button:hover {
+	background-color: rgba(65, 134, 65, 0.664);
+}
+
+.reset-button {
+	background-color: rgba(158, 158, 158, 0.404);
+}
+.reset-button:hover {
+	background-color: rgba(158, 158, 158, 0.212);
+}
+
+.stop-button {
+	background-color: rgb(194, 84, 69);
+}
+.stop-button:hover {
+	background-color: rgba(194, 84, 69, 0.671);
+}
